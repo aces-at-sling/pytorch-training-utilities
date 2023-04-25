@@ -1,0 +1,3 @@
+[submodule "pytorch-training-utilities"]
+	path = pytorch-training-utilities
+	url = https://github.com/aces-at-sling/pytorch-training-utilities.git
