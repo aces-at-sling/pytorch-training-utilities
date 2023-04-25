@@ -20,7 +20,7 @@ _logger = logging.getLogger(__name__)
 class Engine(DeepSpeedEngine):
     def __init__(self, optimizer="ADAM_OPTIMIZER", *args, **kwargs):
         fix_unset_envs()
-        super().__init__(None, optimizer="ADAM_OPTIMIZER", *args, **kwargs)
+        super().__init__(None,"ADAM_OPTIMIZER", *args, **kwargs)
         self._frozen_params = set()
 
     def freeze(self):
